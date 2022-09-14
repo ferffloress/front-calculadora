@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(#8b9da9, #fff6e4)
+}
+
+.calculator {
+    margin: auto;
+    padding-top: 10%;
+    max-width: 650px;
+    max-height: 550px;
+    box-shadow: 0 0 75px 30px rgba(#cdcdcd, 0.7);
+}
+
+.display-result {
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px 10px 0 0;
+    font-size: 4em;
+    text-align: right;
+    grid-area: 1 / 1 / 2 / 7;
+}
+
+
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .equal-button {
+    grid-area: 6 / 6 / 8 / 7;
+    
+}
+
+.equal-button button{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+button {
+   color: white;
+    mix-blend-mode: overlay;
+    background-color: black;
+    border: 1px solid gray;
+
+ 
+}
